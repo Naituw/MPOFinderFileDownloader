@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C656D6802005C1E700721877 /* MPOFinderFileDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = C656D67F2005C1E700721877 /* MPOFinderFileDownloader.h */; };
+		C656D6822005C1E700721877 /* MPOFinderFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C656D6812005C1E700721877 /* MPOFinderFileDownloader.m */; };
+		C656D68A2005C26500721877 /* MPOSimpleDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = C656D6882005C26500721877 /* MPOSimpleDownloader.h */; };
+		C656D68B2005C26500721877 /* MPOSimpleDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C656D6892005C26500721877 /* MPOSimpleDownloader.m */; };
+		C656D68E2005C27B00721877 /* MPOFinderFileStatusUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = C656D68C2005C27B00721877 /* MPOFinderFileStatusUpdater.h */; };
+		C656D68F2005C27B00721877 /* MPOFinderFileStatusUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = C656D68D2005C27B00721877 /* MPOFinderFileStatusUpdater.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C656D67C2005C1E700721877 /* libMPOFinderFileDownloader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMPOFinderFileDownloader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C656D67F2005C1E700721877 /* MPOFinderFileDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPOFinderFileDownloader.h; sourceTree = "<group>"; };
+		C656D6812005C1E700721877 /* MPOFinderFileDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPOFinderFileDownloader.m; sourceTree = "<group>"; };
+		C656D6882005C26500721877 /* MPOSimpleDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPOSimpleDownloader.h; sourceTree = "<group>"; };
+		C656D6892005C26500721877 /* MPOSimpleDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPOSimpleDownloader.m; sourceTree = "<group>"; };
+		C656D68C2005C27B00721877 /* MPOFinderFileStatusUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPOFinderFileStatusUpdater.h; sourceTree = "<group>"; };
+		C656D68D2005C27B00721877 /* MPOFinderFileStatusUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPOFinderFileStatusUpdater.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C656D6792005C1E700721877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C656D6732005C1E700721877 = {
+			isa = PBXGroup;
+			children = (
+				C656D67E2005C1E700721877 /* MPOFinderFileDownloader */,
+				C656D67D2005C1E700721877 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C656D67D2005C1E700721877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C656D67C2005C1E700721877 /* libMPOFinderFileDownloader.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C656D67E2005C1E700721877 /* MPOFinderFileDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				C656D67F2005C1E700721877 /* MPOFinderFileDownloader.h */,
+				C656D6812005C1E700721877 /* MPOFinderFileDownloader.m */,
+				C656D6882005C26500721877 /* MPOSimpleDownloader.h */,
+				C656D6892005C26500721877 /* MPOSimpleDownloader.m */,
+				C656D68C2005C27B00721877 /* MPOFinderFileStatusUpdater.h */,
+				C656D68D2005C27B00721877 /* MPOFinderFileStatusUpdater.m */,
+			);
+			path = MPOFinderFileDownloader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C656D67A2005C1E700721877 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656D68E2005C27B00721877 /* MPOFinderFileStatusUpdater.h in Headers */,
+				C656D68A2005C26500721877 /* MPOSimpleDownloader.h in Headers */,
+				C656D6802005C1E700721877 /* MPOFinderFileDownloader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C656D67B2005C1E700721877 /* MPOFinderFileDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C656D6852005C1E700721877 /* Build configuration list for PBXNativeTarget "MPOFinderFileDownloader" */;
+			buildPhases = (
+				C656D6782005C1E700721877 /* Sources */,
+				C656D6792005C1E700721877 /* Frameworks */,
+				C656D67A2005C1E700721877 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPOFinderFileDownloader;
+			productName = MPOFinderFileDownloader;
+			productReference = C656D67C2005C1E700721877 /* libMPOFinderFileDownloader.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C656D6742005C1E700721877 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wutian;
+				TargetAttributes = {
+					C656D67B2005C1E700721877 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C656D6772005C1E700721877 /* Build configuration list for PBXProject "MPOFinderFileDownloader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C656D6732005C1E700721877;
+			productRefGroup = C656D67D2005C1E700721877 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C656D67B2005C1E700721877 /* MPOFinderFileDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C656D6782005C1E700721877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656D6822005C1E700721877 /* MPOFinderFileDownloader.m in Sources */,
+				C656D68F2005C27B00721877 /* MPOFinderFileStatusUpdater.m in Sources */,
+				C656D68B2005C26500721877 /* MPOSimpleDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C656D6832005C1E700721877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C656D6842005C1E700721877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C656D6862005C1E700721877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMJXDB9H6Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C656D6872005C1E700721877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DMJXDB9H6Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C656D6772005C1E700721877 /* Build configuration list for PBXProject "MPOFinderFileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C656D6832005C1E700721877 /* Debug */,
+				C656D6842005C1E700721877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C656D6852005C1E700721877 /* Build configuration list for PBXNativeTarget "MPOFinderFileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C656D6862005C1E700721877 /* Debug */,
+				C656D6872005C1E700721877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C656D6742005C1E700721877 /* Project object */;
+}

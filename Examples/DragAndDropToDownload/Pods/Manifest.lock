@@ -1,0 +1,16 @@
+PODS:
+  - MPOFinderFileDownloader (0.0.1)
+
+DEPENDENCIES:
+  - MPOFinderFileDownloader (from `../../`)
+
+EXTERNAL SOURCES:
+  MPOFinderFileDownloader:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  MPOFinderFileDownloader: 7d830d0626214b96db1ded2702a2bcd8be29a69f
+
+PODFILE CHECKSUM: c4aa15892dd9bb298764f12bfd068e4d5cd0335f
+
+COCOAPODS: 1.1.1

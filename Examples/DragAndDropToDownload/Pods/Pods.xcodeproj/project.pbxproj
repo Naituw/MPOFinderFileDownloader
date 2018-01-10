@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0514331899D12540EDA1C51DF8822D4D /* MPOSimpleFileDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BF0DC8100749FA06AD573F26F8A92B /* MPOSimpleFileDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		120D92FB7D7AF911D0CD2331921DF7BF /* MPOFinderFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2E8368AEF18D0A1D118B3E5904197D /* MPOFinderFileDownloader.m */; };
+		2DBD2290A1A45B585AC3338ECD8C14D0 /* MPOFinderFileStatusUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CCDF9A116F7969643946ECC60228F6 /* MPOFinderFileStatusUpdater.m */; };
+		3AA1850817F56B029145ACBEEB51389E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
+		3C65A312C4827F0DC3DBB9320F0DD9FC /* MPOSimpleFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A442797336622403AD7723BF6823D6B /* MPOSimpleFileDownloader.m */; };
+		4C3E54C94B847C6F8D6CBDC9DB62DD01 /* MPOFinderFileDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 91779E333F4704473E1AA19C73FA0BFD /* MPOFinderFileDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A78B55B50C73F02736C58039623B5807 /* MPOFileDownloading.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDDA182CB012A5D3A927A8611C5DC7A /* MPOFileDownloading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9196BE02DC49CD2674D0DF65B137935 /* Pods-DragAndDropToDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D421E76919D48841DD8A4FD85C578 /* Pods-DragAndDropToDownload-dummy.m */; };
+		C5EA189AECD1D36C4539F4F159046C9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E110E3518E2D475577D0E2056C8B05D /* Foundation.framework */; };
+		D0368D5C6D08D167928043D762DA54B5 /* MPOFinderFileDownloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542C0E47CF87B0E8ACCD3A0E664F56C /* MPOFinderFileDownloader-dummy.m */; };
+		E03D28B6B20792A81F00300ADC98FB01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */; };
+		E230BC8106423FE613E02A8E500549AB /* MPOFinderFileStatusUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E72231FF82A492345B550C9764511A /* MPOFinderFileStatusUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7521BCEF9CD13D6F8A7DD9D0E9372B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC653E68A21E69ECB4CA8D5D73EF7F5;
+			remoteInfo = MPOFinderFileDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10B04390CD48A9B7E1F71E3FDCB885E3 /* Pods-DragAndDropToDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragAndDropToDownload.debug.xcconfig"; sourceTree = "<group>"; };
+		1E110E3518E2D475577D0E2056C8B05D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		28896A2E7111D1A57D87ABA1ADE44224 /* Pods-DragAndDropToDownload-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragAndDropToDownload-frameworks.sh"; sourceTree = "<group>"; };
+		38CCDF9A116F7969643946ECC60228F6 /* MPOFinderFileStatusUpdater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPOFinderFileStatusUpdater.m; sourceTree = "<group>"; };
+		569EE59F46A8AB9E713C997A17053BBE /* Pods-DragAndDropToDownload-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DragAndDropToDownload-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6CE4D4E0433A56ED81DA4EADC6578155 /* Pods-DragAndDropToDownload-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DragAndDropToDownload-resources.sh"; sourceTree = "<group>"; };
+		6D7B6E09A6AD71AA1D34012FD5353DE7 /* MPOFinderFileDownloader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPOFinderFileDownloader-prefix.pch"; sourceTree = "<group>"; };
+		7B2D421E76919D48841DD8A4FD85C578 /* Pods-DragAndDropToDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DragAndDropToDownload-dummy.m"; sourceTree = "<group>"; };
+		87BF0DC8100749FA06AD573F26F8A92B /* MPOSimpleFileDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPOSimpleFileDownloader.h; sourceTree = "<group>"; };
+		89E72231FF82A492345B550C9764511A /* MPOFinderFileStatusUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPOFinderFileStatusUpdater.h; sourceTree = "<group>"; };
+		8A442797336622403AD7723BF6823D6B /* MPOSimpleFileDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPOSimpleFileDownloader.m; sourceTree = "<group>"; };
+		8B45FA9896FE0757E26DC4F46719FA41 /* MPOFinderFileDownloader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MPOFinderFileDownloader.xcconfig; sourceTree = "<group>"; };
+		91779E333F4704473E1AA19C73FA0BFD /* MPOFinderFileDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPOFinderFileDownloader.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9542C0E47CF87B0E8ACCD3A0E664F56C /* MPOFinderFileDownloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPOFinderFileDownloader-dummy.m"; sourceTree = "<group>"; };
+		CBDDA182CB012A5D3A927A8611C5DC7A /* MPOFileDownloading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPOFileDownloading.h; sourceTree = "<group>"; };
+		DA2E8368AEF18D0A1D118B3E5904197D /* MPOFinderFileDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPOFinderFileDownloader.m; sourceTree = "<group>"; };
+		DE4155CD856D836A7B5A1CD0C5298EFE /* Pods-DragAndDropToDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DragAndDropToDownload.release.xcconfig"; sourceTree = "<group>"; };
+		E48F0656DAB483F6B9C51D59517D7E0B /* libPods-DragAndDropToDownload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-DragAndDropToDownload.a"; path = "libPods-DragAndDropToDownload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED73FEBAFC764D12095FC9BF3A02EFB5 /* libMPOFinderFileDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMPOFinderFileDownloader.a; path = libMPOFinderFileDownloader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BBD71A113EB866108B76F3E5F8E812 /* Pods-DragAndDropToDownload-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DragAndDropToDownload-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32C7F4751FE46A5F996786BB3C530717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA1850817F56B029145ACBEEB51389E /* Cocoa.framework in Frameworks */,
+				C5EA189AECD1D36C4539F4F159046C9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D34268DD5FAD24DAA4CB16D59CFE94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E03D28B6B20792A81F00300ADC98FB01 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04AAD15832AE386AD9A6543877F800F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B45FA9896FE0757E26DC4F46719FA41 /* MPOFinderFileDownloader.xcconfig */,
+				9542C0E47CF87B0E8ACCD3A0E664F56C /* MPOFinderFileDownloader-dummy.m */,
+				6D7B6E09A6AD71AA1D34012FD5353DE7 /* MPOFinderFileDownloader-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Examples/DragAndDropToDownload/Pods/Target Support Files/MPOFinderFileDownloader";
+			sourceTree = "<group>";
+		};
+		372E9684C21B24FB24727471E7509DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED73FEBAFC764D12095FC9BF3A02EFB5 /* libMPOFinderFileDownloader.a */,
+				E48F0656DAB483F6B9C51D59517D7E0B /* libPods-DragAndDropToDownload.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7990A73929F0BEAC18507ADA6EEE5B2D /* MPOFinderFileDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				CBDDA182CB012A5D3A927A8611C5DC7A /* MPOFileDownloading.h */,
+				91779E333F4704473E1AA19C73FA0BFD /* MPOFinderFileDownloader.h */,
+				DA2E8368AEF18D0A1D118B3E5904197D /* MPOFinderFileDownloader.m */,
+				89E72231FF82A492345B550C9764511A /* MPOFinderFileStatusUpdater.h */,
+				38CCDF9A116F7969643946ECC60228F6 /* MPOFinderFileStatusUpdater.m */,
+				87BF0DC8100749FA06AD573F26F8A92B /* MPOSimpleFileDownloader.h */,
+				8A442797336622403AD7723BF6823D6B /* MPOSimpleFileDownloader.m */,
+			);
+			name = MPOFinderFileDownloader;
+			path = MPOFinderFileDownloader;
+			sourceTree = "<group>";
+		};
+		7B096A475BBB7BA9C78CBE4AAB74B014 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96AC515C1C3E972CD7682346CB383B52 /* MPOFinderFileDownloader */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				7B096A475BBB7BA9C78CBE4AAB74B014 /* Development Pods */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				372E9684C21B24FB24727471E7509DF5 /* Products */,
+				9D9303AAFF3A6085AA1D1676E35AF0C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92FC4590B3B6C6A2141FDC7D1DA8879E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				6526E38143AA3C7320583E142AA64538 /* Cocoa.framework */,
+				1E110E3518E2D475577D0E2056C8B05D /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		96AC515C1C3E972CD7682346CB383B52 /* MPOFinderFileDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				7990A73929F0BEAC18507ADA6EEE5B2D /* MPOFinderFileDownloader */,
+				04AAD15832AE386AD9A6543877F800F7 /* Support Files */,
+			);
+			name = MPOFinderFileDownloader;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		9D9303AAFF3A6085AA1D1676E35AF0C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1A0884C3E71E2C131F7144389BBBC3D /* Pods-DragAndDropToDownload */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FC4590B3B6C6A2141FDC7D1DA8879E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1A0884C3E71E2C131F7144389BBBC3D /* Pods-DragAndDropToDownload */ = {
+			isa = PBXGroup;
+			children = (
+				569EE59F46A8AB9E713C997A17053BBE /* Pods-DragAndDropToDownload-acknowledgements.markdown */,
+				F9BBD71A113EB866108B76F3E5F8E812 /* Pods-DragAndDropToDownload-acknowledgements.plist */,
+				7B2D421E76919D48841DD8A4FD85C578 /* Pods-DragAndDropToDownload-dummy.m */,
+				28896A2E7111D1A57D87ABA1ADE44224 /* Pods-DragAndDropToDownload-frameworks.sh */,
+				6CE4D4E0433A56ED81DA4EADC6578155 /* Pods-DragAndDropToDownload-resources.sh */,
+				10B04390CD48A9B7E1F71E3FDCB885E3 /* Pods-DragAndDropToDownload.debug.xcconfig */,
+				DE4155CD856D836A7B5A1CD0C5298EFE /* Pods-DragAndDropToDownload.release.xcconfig */,
+			);
+			name = "Pods-DragAndDropToDownload";
+			path = "Target Support Files/Pods-DragAndDropToDownload";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48F97BBCB878F8D50B499F750B9F6796 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78B55B50C73F02736C58039623B5807 /* MPOFileDownloading.h in Headers */,
+				4C3E54C94B847C6F8D6CBDC9DB62DD01 /* MPOFinderFileDownloader.h in Headers */,
+				E230BC8106423FE613E02A8E500549AB /* MPOFinderFileStatusUpdater.h in Headers */,
+				0514331899D12540EDA1C51DF8822D4D /* MPOSimpleFileDownloader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		78BBFAEFE95777B68CD79603512ACA32 /* Pods-DragAndDropToDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B58EBF46AA77FDE5943EB0C3A3F0646D /* Build configuration list for PBXNativeTarget "Pods-DragAndDropToDownload" */;
+			buildPhases = (
+				1801BF56E272B96C3E982ECCAEF6A734 /* Sources */,
+				8D34268DD5FAD24DAA4CB16D59CFE94E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62D9621E6A7D421AE139A17C46E7B5A8 /* PBXTargetDependency */,
+			);
+			name = "Pods-DragAndDropToDownload";
+			productName = "Pods-DragAndDropToDownload";
+			productReference = E48F0656DAB483F6B9C51D59517D7E0B /* libPods-DragAndDropToDownload.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9AC653E68A21E69ECB4CA8D5D73EF7F5 /* MPOFinderFileDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16EF8F4D6C043DF0E50E077C3296AE03 /* Build configuration list for PBXNativeTarget "MPOFinderFileDownloader" */;
+			buildPhases = (
+				2AD45021F673AD7E8046E005DA29C547 /* Sources */,
+				32C7F4751FE46A5F996786BB3C530717 /* Frameworks */,
+				48F97BBCB878F8D50B499F750B9F6796 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPOFinderFileDownloader;
+			productName = MPOFinderFileDownloader;
+			productReference = ED73FEBAFC764D12095FC9BF3A02EFB5 /* libMPOFinderFileDownloader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 372E9684C21B24FB24727471E7509DF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC653E68A21E69ECB4CA8D5D73EF7F5 /* MPOFinderFileDownloader */,
+				78BBFAEFE95777B68CD79603512ACA32 /* Pods-DragAndDropToDownload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1801BF56E272B96C3E982ECCAEF6A734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9196BE02DC49CD2674D0DF65B137935 /* Pods-DragAndDropToDownload-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD45021F673AD7E8046E005DA29C547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0368D5C6D08D167928043D762DA54B5 /* MPOFinderFileDownloader-dummy.m in Sources */,
+				120D92FB7D7AF911D0CD2331921DF7BF /* MPOFinderFileDownloader.m in Sources */,
+				2DBD2290A1A45B585AC3338ECD8C14D0 /* MPOFinderFileStatusUpdater.m in Sources */,
+				3C65A312C4827F0DC3DBB9320F0DD9FC /* MPOSimpleFileDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62D9621E6A7D421AE139A17C46E7B5A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MPOFinderFileDownloader;
+			target = 9AC653E68A21E69ECB4CA8D5D73EF7F5 /* MPOFinderFileDownloader */;
+			targetProxy = 7521BCEF9CD13D6F8A7DD9D0E9372B2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B5B758A7DCF3802875A62673839A140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B45FA9896FE0757E26DC4F46719FA41 /* MPOFinderFileDownloader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MPOFinderFileDownloader/MPOFinderFileDownloader-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1C0088F463CCD63294D60EB7A646D917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4155CD856D836A7B5A1CD0C5298EFE /* Pods-DragAndDropToDownload.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		34342BBF37D3A9ED85FF2EB654934920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8BC046E00F66716A267B8C7520A33ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B45FA9896FE0757E26DC4F46719FA41 /* MPOFinderFileDownloader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MPOFinderFileDownloader/MPOFinderFileDownloader-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A404E9EA167811FB09EDFB6AACF7BD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B04390CD48A9B7E1F71E3FDCB885E3 /* Pods-DragAndDropToDownload.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6FC88CB717F413199C282718D2DC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16EF8F4D6C043DF0E50E077C3296AE03 /* Build configuration list for PBXNativeTarget "MPOFinderFileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B5B758A7DCF3802875A62673839A140 /* Debug */,
+				8BC046E00F66716A267B8C7520A33ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34342BBF37D3A9ED85FF2EB654934920 /* Debug */,
+				F6FC88CB717F413199C282718D2DC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B58EBF46AA77FDE5943EB0C3A3F0646D /* Build configuration list for PBXNativeTarget "Pods-DragAndDropToDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A404E9EA167811FB09EDFB6AACF7BD4E /* Debug */,
+				1C0088F463CCD63294D60EB7A646D917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
