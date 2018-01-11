@@ -131,7 +131,7 @@ typedef NS_ENUM(NSInteger, DragViewState) {
 {
     _downloader = [[MPOFinderFileDownloader alloc] initWithUnderlyingDownloader:[[MPOSimpleFileDownloader alloc] init]];
     
-    [_downloader downloadURL:[NSURL URLWithString:@"https://gslb.miaopai.com/stream/8uKjjX2yUd5cWmd0uulLloGIqW5XPkzR~vo15Q__.mp4?ssig=9078fe0ac41ccaef45e32e737909c1d7&time_stamp=1515587145862&cookie_id=&vend=1&os=3&partner=1&platform=2&cookie_id=&refer=miaopai&scid=8uKjjX2yUd5cWmd0uulLloGIqW5XPkzR%7Evo15Q__"] toPath:url.path progress:^(double progress) {
+    [_downloader downloadURL:[NSURL URLWithString:@"https://gslb.miaopai.com/stream/8uKjjX2yUd5cWmd0uulLloGIqW5XPkzR~vo15Q__.mp4?ssig=9078fe0ac41ccaef45e32e737909c1d7&time_stamp=1515587145862&cookie_id=&vend=1&os=3&partner=1&platform=2&cookie_id=&refer=miaopai&scid=8uKjjX2yUd5cWmd0uulLloGIqW5XPkzR%7Evo15Q__"] toPath:url.path progress:^(long long bytesWritten, long long totalBytesExpected) {
         
     } completion:^(NSError *error) {
         NSLog(@"complete! %@", error);

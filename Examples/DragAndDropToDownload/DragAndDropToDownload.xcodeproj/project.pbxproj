@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C653AD4520072F040020F066 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C653AD4420072F040020F066 /* Accelerate.framework */; };
 		C656D69E2005C3A500721877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C656D69D2005C3A500721877 /* AppDelegate.m */; };
 		C656D6A12005C3A500721877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C656D6A02005C3A500721877 /* ViewController.m */; };
 		C656D6A32005C3A500721877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C656D6A22005C3A500721877 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1DB042DFB5652EB783C02D5E /* libPods-DragAndDropToDownload.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DragAndDropToDownload.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C653AD4420072F040020F066 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		C656D6992005C3A500721877 /* DragAndDropToDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndDropToDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C656D69C2005C3A500721877 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C656D69D2005C3A500721877 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C653AD4520072F040020F066 /* Accelerate.framework in Frameworks */,
 				D5CCCCB7C5132ED0AA231FBD /* libPods-DragAndDropToDownload.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 		C578C620FC28B3492097C9B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C653AD4420072F040020F066 /* Accelerate.framework */,
 				1DB042DFB5652EB783C02D5E /* libPods-DragAndDropToDownload.a */,
 			);
 			name = Frameworks;

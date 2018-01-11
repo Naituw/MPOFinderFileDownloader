@@ -38,12 +38,6 @@
         };
     }
     
-    if (!progress) {
-        progress = ^(double progress) {
-            
-        };
-    }
-    
     if (self.downloading) {
         return completion([self _errorWithCode:MPOSimpleFileDownloaderErrorCodeAlreadyDownloading]);
     }
@@ -60,7 +54,10 @@
     _progressBlock = progress;
     _completionBlock = completion;
     
-    _currentConnection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:url] delegate:self];
+    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
+    request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    
+    _currentConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [_currentConnection start];
 }
 
@@ -79,8 +76,15 @@
     }
 }
 
+- (long long)currentDownloadSpeedBytesPerSecond
+{
+    return 0;
+}
+
 - (void)_completeWithError:(NSError *)error
 {
+    [self _closeOutputStreamIfNeeded];
+    
     if (_currentConnection) {
         _currentConnection = nil;
     }
@@ -94,12 +98,8 @@
 
 - (void)_updateProgress
 {
-    if (_fileTotalBytes) {
-        double progress = (double)_fileBytesWritten / (double)_fileTotalBytes;
-        progress = MAX(0, MIN(progress, 1));
-        if (_progressBlock) {
-            _progressBlock(progress);
-        }
+    if (_fileTotalBytes && _progressBlock) {
+        _progressBlock(_fileBytesWritten, _fileTotalBytes);
     }
 }
 
@@ -108,17 +108,8 @@
     if (!_fileOutputStream) {
         return;
     }
-    switch (_fileOutputStream.streamStatus) {
-        case NSStreamStatusOpening:
-        case NSStreamStatusOpen:
-        case NSStreamStatusReading:
-        case NSStreamStatusWriting:
-        case NSStreamStatusAtEnd:
-            [_fileOutputStream close];
-            break;
-        default:
-            break;
-    }
+    [_fileOutputStream close];
+    _fileOutputStream = nil;
 }
 
 - (void)_reset

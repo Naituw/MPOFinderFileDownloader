@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^MPOFileDownloadProgressBlock)(double progress);
+typedef void (^MPOFileDownloadProgressBlock)(long long bytesWritten, long long totalBytesExpected);
 typedef void (^MPOFileDownloadCompletionBlock)(NSError * error);
 
 // MPOFileDownloader should NOT support more than one download task per instance
@@ -19,5 +19,7 @@ typedef void (^MPOFileDownloadCompletionBlock)(NSError * error);
 @property (nonatomic, assign, readonly) BOOL downloading;
 
 - (void)cancelCurrentDownload;
+
+@property (nonatomic, assign, readonly) long long currentDownloadSpeedBytesPerSecond;
 
 @end
