@@ -116,7 +116,7 @@
 {
     [self _closeOutputStreamIfNeeded];
     
-    _fileOutputStream = nil;
+    _outputPath = nil;
     _completionBlock = NULL;
     _progressBlock = NULL;
     _fileTotalBytes = 0;
@@ -143,7 +143,9 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     NSUInteger length = data.length;
+    
     _fileBytesWritten += [_fileOutputStream write:data.bytes maxLength:length];
+
     [self _updateProgress];
 }
 
