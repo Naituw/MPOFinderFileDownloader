@@ -10,6 +10,8 @@
 #import <MPOFinderFileDownloader.h>
 #import <MPOSimpleFileDownloader.h>
 
+#define DownloadURL @"http://users.wfu.edu/yipcw/atg/vid/katamari-star8-10s-h264.mov"
+
 typedef NS_ENUM(NSInteger, DragViewState) {
     DragViewStateReady,
     DragViewStateDragging,
@@ -89,6 +91,11 @@ typedef NS_ENUM(NSInteger, DragViewState) {
 {
     [super mouseDragged:event];
     
+    if (_state != DragViewStateReady &&
+        _state != DragViewStateDownloadSuccess) {
+        return;
+    }
+    
     NSFilePromiseProvider * provider = [[NSFilePromiseProvider alloc] initWithFileType:(NSString *)kUTTypeQuickTimeMovie delegate:self];
     NSDraggingItem * dragItem = [[NSDraggingItem alloc] initWithPasteboardWriter:provider];
     NSImage * image = [[NSImage alloc] initWithData:[self dataWithPDFInsideRect:[self bounds]]];
@@ -124,20 +131,24 @@ typedef NS_ENUM(NSInteger, DragViewState) {
 
 - (NSString *)filePromiseProvider:(NSFilePromiseProvider*)filePromiseProvider fileNameForType:(NSString *)fileType
 {
-    return @"test.mov";
+    return DownloadURL.lastPathComponent;
 }
 
 - (void)filePromiseProvider:(NSFilePromiseProvider*)filePromiseProvider writePromiseToURL:(NSURL *)url completionHandler:(void (^)(NSError * __nullable errorOrNil))completionHandler
 {
     _downloader = [[MPOFinderFileDownloader alloc] initWithUnderlyingDownloader:[[MPOSimpleFileDownloader alloc] init]];
     
-    [_downloader downloadURL:[NSURL URLWithString:@"https://gslb.miaopai.com/stream/8uKjjX2yUd5cWmd0uulLloGIqW5XPkzR~vo15Q__.mp4?ssig=9078fe0ac41ccaef45e32e737909c1d7&time_stamp=1515587145862&cookie_id=&vend=1&os=3&partner=1&platform=2&cookie_id=&refer=miaopai&scid=8uKjjX2yUd5cWmd0uulLloGIqW5XPkzR%7Evo15Q__"] toPath:url.path progress:^(long long bytesWritten, long long totalBytesExpected) {
+    [_downloader downloadURL:[NSURL URLWithString:DownloadURL] toPath:url.path progress:^(long long bytesWritten, long long totalBytesExpected) {
         
     } completion:^(NSError *error) {
         if (completionHandler) {
             completionHandler(error);
         }
-        NSLog(@"complete! %@", error);
+        if (error){
+            self.state = DragViewStateReady;
+        } else {
+            self.state = DragViewStateDownloadSuccess;
+        }
     }];
 }
 
