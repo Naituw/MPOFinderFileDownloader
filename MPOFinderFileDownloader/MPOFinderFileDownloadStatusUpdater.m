@@ -77,6 +77,10 @@ static NSString* ProgressString(NSString* string) {
         if (!_filePath.length) {
             return nil;
         }
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:_filePath]) {
+            _nsProgress = [self _createNSProgress];
+        }
     }
     return self;
 }
@@ -145,8 +149,10 @@ static NSString* ProgressString(NSString* string) {
         });
     }];
     
-    progress.totalUnitCount = _totalBytesExpected;
-    progress.completedUnitCount = _bytesWritten;
+    if (_totalBytesExpected) {
+        progress.totalUnitCount = _totalBytesExpected;
+        progress.completedUnitCount = _bytesWritten;
+    }
     
     [progress publish];
     

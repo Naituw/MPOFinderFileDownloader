@@ -54,6 +54,11 @@
     _progressBlock = progress;
     _completionBlock = completion;
     
+    if (!_fileOutputStream) {
+        _fileOutputStream = [NSOutputStream outputStreamToFileAtPath:_outputPath append:NO];
+        [_fileOutputStream open];
+    }
+    
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
     request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     
@@ -72,7 +77,7 @@
         [_currentConnection cancel];
         _currentConnection = nil;
         
-        [self _reset];
+        [self _completeWithError:[self _errorWithCode:MPOSimpleFileDownloaderErrorCodeCancelled]];
     }
 }
 
@@ -87,6 +92,11 @@
     
     if (_currentConnection) {
         _currentConnection = nil;
+    }
+    
+    if (error.domain == MPOSimpleFileDownloaderErrorDomain && error.code == MPOSimpleFileDownloaderErrorCodeCancelled) {
+        [[NSFileManager defaultManager] removeItemAtPath:_outputPath error:NULL];
+        [[NSWorkspace sharedWorkspace] noteFileSystemChanged:_outputPath];
     }
     
     if (_completionBlock) {
@@ -131,11 +141,6 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     _fileTotalBytes = response.expectedContentLength;
-    
-    if (!_fileOutputStream) {
-        _fileOutputStream = [NSOutputStream outputStreamToFileAtPath:_outputPath append:NO];
-        [_fileOutputStream open];
-    }
     
     [self _updateProgress];
 }

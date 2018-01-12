@@ -28,6 +28,7 @@
 
 - (void)downloadURL:(NSURL *)url toPath:(NSString *)path progress:(MPOFileDownloadProgressBlock)progressBlock completion:(MPOFileDownloadCompletionBlock)completion
 {
+    BOOL __block finished = NO;
     typeof(self) __weak weakSelf = self;
     [self.underlyingDownloader downloadURL:url toPath:path progress:^(long long bytesWritten, long long totalBytesExpected) {
         typeof(weakSelf) __strong strongSelf = weakSelf;
@@ -35,16 +36,13 @@
             return;
         }
         
-        if (!strongSelf.fileStatusUpdater) {
-            strongSelf.fileStatusUpdater = [[MPOFinderFileDownloadStatusUpdater alloc] initWithDownloadingToFilePath:path sourceURL:url delegate:self];
-        } else {
-            [strongSelf.fileStatusUpdater downloadProgressUpdateWithTotalBytesExpected:totalBytesExpected bytesWritten:bytesWritten speed:strongSelf.underlyingDownloader.currentDownloadSpeedBytesPerSecond];
-        }
-        
+        [strongSelf.fileStatusUpdater downloadProgressUpdateWithTotalBytesExpected:totalBytesExpected bytesWritten:bytesWritten speed:strongSelf.underlyingDownloader.currentDownloadSpeedBytesPerSecond];
+
         if (progressBlock) {
             progressBlock(bytesWritten, totalBytesExpected);
         }
     } completion:^(NSError *error) {
+        finished = YES;
         typeof(weakSelf) __strong strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -59,6 +57,10 @@
             completion(error);
         }
     }];
+    
+    if (!finished) {
+        self.fileStatusUpdater = [[MPOFinderFileDownloadStatusUpdater alloc] initWithDownloadingToFilePath:path sourceURL:url delegate:self];
+    }
 }
 
 - (BOOL)downloading
@@ -78,7 +80,7 @@
 
 - (void)fileDownloadStatusUpdaterDidPerformCancel:(MPOFinderFileDownloadStatusUpdater *)updater
 {
-    
+    [self cancelCurrentDownload];
 }
 
 @end

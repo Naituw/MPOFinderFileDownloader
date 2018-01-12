@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, MPOSimpleFileDownloaderErrorCode) {
     MPOSimpleFileDownloaderErrorCodeFileExists,
     MPOSimpleFileDownloaderErrorCodeInvalidParamaters,
     MPOSimpleFileDownloaderErrorCodeUnexpectedEOF,
+    MPOSimpleFileDownloaderErrorCodeCancelled,
 };
 
 extern NSString * const MPOSimpleFileDownloaderErrorDomain;
