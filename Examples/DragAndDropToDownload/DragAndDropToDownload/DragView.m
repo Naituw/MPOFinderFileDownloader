@@ -131,7 +131,7 @@ typedef NS_ENUM(NSInteger, DragViewState) {
 
 - (NSString *)filePromiseProvider:(NSFilePromiseProvider*)filePromiseProvider fileNameForType:(NSString *)fileType
 {
-    return DownloadURL.lastPathComponent;
+    return [NSURL URLWithString:DownloadURL].path.lastPathComponent;
 }
 
 - (void)filePromiseProvider:(NSFilePromiseProvider*)filePromiseProvider writePromiseToURL:(NSURL *)url completionHandler:(void (^)(NSError * __nullable errorOrNil))completionHandler

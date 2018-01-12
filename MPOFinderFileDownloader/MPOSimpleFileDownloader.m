@@ -7,10 +7,12 @@
 //
 
 #import "MPOSimpleFileDownloader.h"
+#import "MPOThroughputHistory.h"
 
 @interface MPOSimpleFileDownloader () <NSURLConnectionDataDelegate>
 
 @property (nonatomic, strong) NSURLConnection * currentConnection;
+@property (nonatomic, strong) MPOThroughputHistory * throughputHistory;
 @property (nonatomic, strong) NSOutputStream * fileOutputStream;
 @property (nonatomic, strong) NSString * outputPath;
 @property (nonatomic, copy) MPOFileDownloadProgressBlock progressBlock;
@@ -83,7 +85,7 @@
 
 - (long long)currentDownloadSpeedBytesPerSecond
 {
-    return 0;
+    return _throughputHistory.currentBytesPerSeconds;
 }
 
 - (void)_completeWithError:(NSError *)error
@@ -126,6 +128,7 @@
 {
     [self _closeOutputStreamIfNeeded];
     
+    _throughputHistory = nil;
     _outputPath = nil;
     _completionBlock = NULL;
     _progressBlock = NULL;
@@ -143,6 +146,11 @@
     _fileTotalBytes = response.expectedContentLength;
     
     [self _updateProgress];
+    
+    if (!_throughputHistory) {
+        _throughputHistory = [[MPOThroughputHistory alloc] initWithMaximumMeasurementsToKeep:50];
+        [_throughputHistory startMeasurement];
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -151,6 +159,8 @@
     
     _fileBytesWritten += [_fileOutputStream write:data.bytes maxLength:length];
 
+    [_throughputHistory push:length];
+    
     [self _updateProgress];
 }
 
